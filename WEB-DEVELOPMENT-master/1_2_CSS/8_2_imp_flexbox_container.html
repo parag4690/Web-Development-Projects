@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box_container_property</title>
+    <style>
+        .container{
+            width:100%;
+            height: 550px;
+            border:2px solid black;
+            /* initialize of flex container */
+            display:flex;
+
+            /* properties for flex box container */
+             
+/**********************           property 1            **************************/
+
+
+           /*            /*flex k karn ye align hogye ob enki height or width set krni prege
+  
+          
+            flex-direction: column; /*row by default /* esme bs coloum ajayge 
+            flex-direction: row-reverse ; /* right se start hoga 1 
+            flex-direction:column-reverse; /* bottom se start 
+
+
+          */  
+
+/*******************           property 2               ***********************/
+           
+
+        /*   jb hm flex ko response ki try krete h inspect ki help se to ye flex box wrap nhi 
+           hote mtlb apni jgh pe fix rhte h jo ki dikhne me bilkul bhi ache ni lgte
+
+           solution: ((((            flex-wrap:wrap;       )))))  or wrap-reverse;
+ 
+        */
+
+
+        /****  combination of direction and wrap  *****/
+
+        flex-flow:row wrap;
+
+/**************************         property - 3  important                ******************/
+
+
+        justify-content: center; /*imp ye bich me le ata h */
+        justify-content: space-between; /*  ye do dabo k bich me space le ata  not corners*/
+        justify-content: space-evenly; /* ye corners k bich me bhi space le ata hai*/
+        justify-content: space-around; /*ek dabe k left or right k hisab se space leata */
+
+
+/*************************         property -4   important                ******************/
+
+        align-items: center; /* ye vertically center le ata hai*/ 
+
+        /* align-items:flex-start  ( ye default hote hai )*/
+
+        /* align -items:flex-end  (ye vertical bilkul niche le ata hai) */
+
+        /* align-items: streach  (vo responsive me width krk dekh apne app spaces bnaleta hai) */
+
+
+        }
+        .items{
+            height: 200px;
+            width:170px;
+            background-color: tomato;
+            border:2px solid green;
+            margin:10px;
+            padding:3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="item-1">First box</div> <!-- these are block by default they take 100% width-->
+        <div class="items" id="item-2">Second box</div>
+        <div class="items" id="item-3">Third box</div>
+        <div class="items" id="item-4">Fourth box</div>
+        <div class="items" id="item-5">Fifth box</div>
+        <div class="items" id="item-6">Sixth box</div>
+    </div>
+</body>
+</html>

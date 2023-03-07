@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&family=League+Spartan:wght@400;@600;@500;700&family=Montserrat:ital,wght@0,100;0,300;0,500;0,700;1,100;1,200;1,300;1,500;1,700&family=Poppins:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+.container{
+    box-sizing: border-box;
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+}
+.box1{
+    box-sizing: border-box;
+    width: 600px;
+    height: 240px;
+    align-self: center;
+    padding: 15px 0px;
+}
+.box2{
+    box-sizing: border-box;
+    margin-top: -51px;
+}
+#heading{
+    font-size: 37px;
+    padding-left: 75px;
+   line-height: 1.5;
+}
+.part1{
+    font-family: 'Poppins', sans-serif;
+    color:grey;
+}
+.part2{
+    font-family: 'Poppins', sans-serif;
+    font-weight:900;
+    color:rgb(83, 80, 80);
+}
+.content1{
+    text-align: center;
+    font-size: 16px;
+    color:gray;
+    padding-top:15px;
+    line-height: 1.4;
+}
+
+/* box2  */
+.box2{
+    display: flex;
+    flex-direction: row;
+    height: 593px;
+    justify-content: space-around;
+    padding: 0px 63px;
+}
+#super , #cal , #team , #karma{
+    /* box-shadow: ; */
+    box-shadow: 5px 5px  15px gray ;
+    border-top: 7px solid hsl(212, 86%, 64%);
+    border-radius: 8px;
+    align-self: center;
+    height: 249px;
+    width: 376px;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.image{
+    align-self: flex-end;
+}
+.sathi{
+    display: flex;
+    flex-direction: column;
+    height: 589px;
+    justify-content: space-evenly;
+}
+#team{
+    border-top: 7px solid hsl(0, 78%, 62%);
+}
+#karma{
+    border-top: 7px solid hsl(0, 78%, 62%);
+}
+#cal{
+    border-top: 7px solid hsl(180, 62%, 55%);
+}
+.name{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color:rgb(90, 88, 88);
+    font-weight: 600;
+
+}
+.line{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color:gray;
+}

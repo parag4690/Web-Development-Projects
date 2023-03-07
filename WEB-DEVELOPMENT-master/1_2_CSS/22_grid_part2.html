@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid part 2</title>
+    <style>
+        .grid{
+            display:grid;
+
+            grid-template-rows: 100px 50px 20px; /*ye bs bta rha un row ki height itni hogi or baki 7 ki auto h abi*/
+            
+            grid-auto-rows: 170px; /*mean baki jinki mene nhi di unke ye hojaye*/
+            grid-template-columns: 400px 300px 200px ;
+
+        }
+        .box{
+            background-color: brown;
+            padding:20px;
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">items-1</div>
+        <div class="box">items-2</div>
+        <div class="box">items-3</div>
+        <div class="box">items-4</div>
+        <div class="box">items-5</div>
+        <div class="box">items-6</div>
+        <div class="box">items-7</div>
+        <div class="box">items-8</div>
+        <div class="box">items-9</div>
+        <div class="box">items-10</div>
+    </div>
+</body>
+</html>

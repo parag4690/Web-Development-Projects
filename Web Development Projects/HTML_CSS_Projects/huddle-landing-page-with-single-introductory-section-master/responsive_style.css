@@ -1,0 +1,39 @@
+@media (max-width:450px){
+  .container{
+    margin-top: 2rem;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .logo img{
+    height: 2.5rem;
+  }
+  .inside_container{
+    text-align: center;
+    flex-direction: column;
+    padding-top: 40px;
+    justify-content: center;
+   
+  }
+  .pic img{
+    height: 15.2rem;
+  }
+  .heading{
+    font-size: 24px;
+  }
+  .button{
+    margin-left: 35px;
+    align-self: center;
+  }
+  .content{
+    /* align-content: center; */
+    justify-content: space-between;
+  padding-top:20px  
+}
+ .paragraph{
+    font-size: 14px;
+ }
+ .socail{
+   padding-top: 5rem;
+   justify-content: center;
+ }
+}

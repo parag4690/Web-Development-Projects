@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body bgcolor="cyan">
+    
+    <form action="form.php">
+        <fieldset >  <legend style="background-color: yellow;">  STUDENT REGISTRATION FORM </legend>
+           
+          First Name : <input type="text" placeholder="enter your name " width="20px"> (max 20 character)
+          <br> <br>
+          EMAIL ID : <input type="email" placeholder="abc@chitkara.edu.in" width="30px">
+          <br> <br>
+          MOBILE NO: <input type="number" placeholder="9012992223" name="parag" min="10" max="20"> (10 digit Number)
+          <br> <br>
+          GENDER : <input type="checkbox"> Male <input type="checkbox"> female
+          <br>
+         Address: <textarea name="adf" id="adf" cols="30" rows="10"> parag </textarea>
+        <br> <br>
+         City: <input type="text"> (max 30 characters a-z from A-Z)
+         <br> <br>
+         PIN CODE: <input type="number" max="7"> (max 6 digit)
+         <br> <br>
+
+         STATE: <input type="text">
+         <br> <br>
+         COUNTRY: <input type="text" value="INDIA" readonly>
+         <br> <br>
+         HOBBIES: 
+         <select name="par" id="rap">
+            <option value="noval">select-from-below</option>
+            <option value="coding">coding</option>
+            <option value="web dev">Web dev</option>
+            <option value="playing">playing</option>
+         </select>
+        <br>
+        QUALIFICATION: <br> <br>
+         
+        <table>
+            <tr>
+                <th>SL.No </th>
+                <th>Examination</th>
+                <th>board</th>
+                <th>year of passing</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Class X</td>
+                <td><input type="text" width="50" height="12"></td>
+                <td><input type="text" width="50" height="12"></td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Class XII</td>
+                <td><input type="text" width="50" height="12"></td>
+                <td><input type="text" width="50" height="12"></td>
+
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>QUALIFICATION</td>
+                <td><input type="text" width="50" height="12"></td>
+                <td><input type="text" width="50" height="12"></td>
+             
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Degree</td>
+                <td><input type="text" width="50" height="12"></td>
+                <td><input type="text" width="50" height="12"></td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td>(10 digit Max)</td>
+                <td>(upon 2 decimal)</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        COURESES APPLIED FOR 
+        <input type="radio" name="cour" id="ta"> BCA <br>
+        <input type="radio" name="cour" id="pa"> BEE <br>
+        <input type="radio" name="cour" id="ka"> B.sc <br>
+        <input type="radio" name="cour" id="la"> B.A <br>
+
+        <center> <input type="submit" value="Submit">
+            <input type="submit" value="reset">
+        </center>
+
+        </fieldset>
+        
+    </form>
+</body>
+</html>

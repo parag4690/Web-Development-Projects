@@ -1,0 +1,124 @@
+
+body{
+    margin-left:0px;
+    margin-top:0px;
+    text-align: center;  
+      font-family: sans-serif;
+    margin-bottom: 0px;
+}
+
+.name 
+{
+  font-family:sacramento;
+  font-size:60px;
+  background-color: aquamarine;
+}
+.bottom{
+    background-color: aquamarine;
+}
+video{
+    border-radius: 10%;
+}
+.top {
+    background-color: aquamarine;
+    position: relative;
+    padding-top: 100px ;
+     
+}
+.pro{
+    text-decoration: underline;
+}
+h1{
+    
+   /* width:10%; ye krne k bad ab vapis se left me agya*/
+    margin: 0 auto 0 auto; /*solution*/
+}
+  
+.botom_cloud{
+    position:absolute; 
+    left:300px;
+    bottom:300px;
+
+}
+.top_cloud{
+    position:absolute;
+    top:50px;
+    right:300px;
+}
+.skill-row{
+    width:50%;
+    margin:100px auto 100px auto ; 
+    text-align: left;
+    /*2nd method use display : inline-block*/
+}
+.skills h3 , .skills p{
+    text-align:left;
+    line-height: 2; /*space */
+}
+.computer , .chilli{
+    /*float*/
+    float:left; /*img text k left me agyi*/
+    width:25%;
+    border-radius: 50%;
+    margin-right:30px;
+}
+.chilli{
+    float:right;
+    /*clear = anti float*/
+}
+.p-chili{
+    clear:right;
+}
+/***************************************************************************************************/
+p{
+    line-height: 2;
+}
+.intro{
+    width:50%;
+    margin : 0 auto 0 auto ;
+}
+.middle-container{
+    margin:100px 0 0; /*spaces k liye*/
+}
+hr{
+    border-right:0px;
+    border-left:0px;
+    border-bottom:0px;
+    border-top:8px dotted aquamarine;
+    height:0px;
+    width:100px
+
+}
+.btn{
+    font-weight: 700;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    background-color:#11cdd4;
+    color:white;
+    text-decoration:none;
+}
+.bottom-container{
+    background-color: #66BFBF;
+    margin-top:100px;
+  padding:40px;
+  position:relative;
+  height:200px;
+}
+.bottom-container a{
+    color:#11999E;
+    text-decoration: none;
+    
+}
+.copy{
+    color:white;
+    position : absolute;
+    bottom:10px;
+    padding-left:560px;
+
+}
+.btn:hover{
+    background-color: red;
+}
+a:hover{
+    color:white;
+}

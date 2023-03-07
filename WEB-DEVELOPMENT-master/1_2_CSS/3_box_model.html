@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <link rel="icon" href="profile.png">
+    <style>
+        body{
+            margin-left:0px;
+            margin-top:0px;
+        }
+        .top,.middle,.bottom {
+            height:200px;
+            width:200px;
+            
+        }
+        .top{
+            background-color: aquamarine;
+            border:10px solid; /*it will increase the size of our box*/
+             /*al our four side , it will not effect any value */
+           
+
+        }
+        .middle{
+            background-color: red;
+            border:20px solid;
+            margin-left:221px;
+        }
+        .bottom{
+            background-color: blue;
+            border:10px solid;
+            margin-left:461px;
+        }
+    </style>
+</head>
+<body>
+    <!--padding just helps the content it effects the actual value of the box, it will not -->
+    <div class="top">
+         
+    </div>
+    <div class="middle"></div>
+    <div class="bottom"></div>
+</body>
+</html>

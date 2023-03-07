@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  <div class="big_container">
+    <div class="split">
+      S P L I <br> T T E R
+    </div>
+    <div class="container">
+      <div class="people">
+        <div class="bil">
+          Bill
+        </div>
+        <div class="input">
+          <form action="action.php">
+            <input type="number" id="tBill" placeholder="0">
+          </form>
+        </div>
+
+        <div class="tip">
+          <div class="select">
+            Select Tip %
+          </div>
+          <div class="discount">
+            <div class="tdis sm">5% </div>
+            <div class="tdis ten">10% </div>
+            <div class="tdis fiveteen"> 15% </div>
+            <div class="tdis tw"> 25% </div>
+            <div class="tdis fiv"> 50% </div>
+            <div class="tdix ">
+              <form action="action.php">
+                <input type="text" id="custom" placeholder="Custom">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="number">
+          Number of People <span class="zero">Can't be Zero</span>
+        </div>
+        <div class="input">
+          <form action="action.php">
+            <input type="text" id="tn" placeholder="0">
+          </form>
+        </div>
+        <!--  -->
+      </div>
+      <div class="amounts">
+        <div class="total">
+          <div class="totalTip">
+            <div class="tip1">
+              <div class="up">
+                Tip amount </div>
+              <div class="down">
+                / person
+              </div>
+
+              <!--  -->
+            </div>
+            <div id="amt1" class="amt">$0.00</div>
+          </div>
+          <div class="totalPerson">
+            <div class="tip1">
+              <div class="up">
+                Tip amount </div>
+              <div class="down">
+                / person
+              </div>
+            </div>
+            <div id="amt2" class="amt">$0.00</div>
+          </div>
+        </div>
+        <div class="button">
+          <button id="but">Reset </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

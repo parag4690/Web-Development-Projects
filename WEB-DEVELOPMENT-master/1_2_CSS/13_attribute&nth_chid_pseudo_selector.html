@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute&nth_chid_pseudo_selector</title>
+    <style>
+        .container{
+              display: inline-block; /*div ka width*/
+
+
+              /*center krne ka easy trika*/
+
+              display: block;
+              width:250px;
+              margin:auto;  
+
+              /**/
+
+              text-align: center;
+        }
+        input{
+            display: block;
+            
+        }
+        input[type="text"]{
+            padding:40px;
+            border:2px solid red;
+        }
+        a[target="_blank"]{
+          font-size: large;
+          text-decoration: none;
+          color:tomato;
+        }
+
+        /******             important       *********/
+
+        li:nth-child(3){
+            color:aqua
+        }
+
+        /****            important         har dusre pe  ********/
+
+        li:nth-child(2n+0){  /*  formula bna skte ho*/
+            color:blueviolet;
+        }
+
+        /*  li:nth-child(Item 2odd)  */
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="http://google.com" target="_blank">google</a>
+        <form action="" class="form-control">
+            <input type="text" placeholder="enter your name">
+            <input type="password" placeholder="Password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item 1</li>
+            <li class="item" id="item-2">Item 2</li>
+            <li class="item" id="item-3">Item 3</li>
+            <li class="item" id="item-4">Item 4</li>
+            <li class="item" id="item-5">Item 5</li>
+        </ul>
+    </div>
+</body>
+</html>

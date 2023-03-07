@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+     *{
+        text-transform:uppercase;
+        margin:0;
+
+     }
+     a{
+         text-decoration: none;
+         color:#fff;
+     }
+     .menu-bar{
+        background-color: #333;
+     }
+     .menu-bar ul{
+         list-style:none;
+     }
+     .menu-bar li{
+         display:inline-flex;
+         text-align: center;
+         width:100px;
+         padding:10px;
+         margin:5px;
+     }
+     .menu-bar li:hover{
+         background-color: aqua;
+     }
+
+     /* img            dropdown*/
+
+     .sub-menu{
+         display:none;
+         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);
+
+
+     }
+     
+     .menu-bar .home:hover .sub-menu {
+         display:block;
+         position: absolute; /*eske karn*/
+         background-color: rgb(0,100,0);
+         margin-top:27px;
+         margin-left:-10px;
+         
+     }
+     .menu-bar .home:hover .sum-menu {
+         display:block;
+         margin:10px;
+     }
+
+     .sub-menu li{
+         display:block;
+         padding-left:-20px;
+         text-align: center;
+         margin-left:-25px;
+     }
+    </style>
+</head>
+<body>
+    <div class="menu-bar">
+        <ul>
+            <li class="home"><a href="#">Home</a>
+               
+                <!--   sub menu    -->
+
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="#">bhiwani</a></li>
+                        <li><a href="#">bhiwani</a></li>
+                        <li><a href="#">bhiwani</a></li>
+                    </ul>
+                </div>
+            
+            
+            
+            </li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">content</a></li>
+            <li><a href="#">register<a></a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,288 @@
+/* css reset = body or html me phle se margin hote h to usko 0 krdo  */
+
+*{
+    margin:0;
+    padding:0;
+}
+
+/* Css variables */
+
+:root{
+    --navbar-height: 50px;
+}
+
+/* Navigation bar  */
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    height: 100%;
+    width:100%;
+
+    /*dyan*/
+    z-index:-1;
+    opacity:0.4;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position:sticky; /* jb navbar ko fix ko krna ho*/
+    width:100%;
+    font-family: 'Baloo Bhai 2', cursive;
+    margin-top:0px;
+}
+
+/* Navigation bar:  logo and image  */
+
+#logo{
+  margin:6px 23px;
+}
+
+#logo img{
+   height:var(--navbar-height);
+   margin:0px 6px;
+}
+
+/* Navigation bar: list item  */
+
+#navbar > ul{
+    display:flex;
+}
+
+#navbar ul li{
+    list-style-type: none;
+    font-size:1rem;
+    /* padding a me duga  kyuki hover krne  pe list me atte hi start hojayga*/
+}
+
+#navbar ul li a{
+    color:white;
+    display: block; /*kyuki by default inline hote ha*/
+    padding:4px 31px;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px grey;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+    
+    border-radius: 20px;
+}
+
+ /* Home section  */
+
+    #Home {
+        display: flex;
+        flex-direction: column;
+        height: 295px;
+        padding: 3px 113px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 35px;
+    }
+
+
+#Home::before{
+    content: "";
+    position:absolute;
+    background-image: url("../background.jpeg") ;
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:410px;
+    width:100%;
+    z-index:-2;
+    top:0;
+    left:0;
+    
+}
+
+#Home h1{
+    color: whitesmoke;
+    text-align: center;
+    text-shadow: 3px 3px 2px black;
+    font-family: 'Bree Serif', serif;
+}
+
+#Home p{
+    color:white;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    font-family: 'Bree Serif', serif;
+
+}
+
+#Home .btn{
+    margin:40px 15px;
+    padding:6px 20px;
+    border-radius: 8px;
+    font-size:1.4rem;
+    background-color:yellow;
+    border:none;
+    font-family: 'Bree Serif', serif;
+    cursor:pointer;
+    align-self: center;
+    /* adding animation */
+    animation-name:pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+}
+#Home .btn:hover{
+    animation:none;
+}
+
+
+@keyframes pulse{
+    0% {
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+      }
+      70% {
+          box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+      }
+      100% {
+          box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      }
+}
+
+/* services section  */
+.service{
+    margin-top:25px;
+    font-family: 'Bree Serif', serif;
+
+}
+#services{
+    margin:34px;
+    display:flex;
+    justify-content: space-between;
+
+}
+#services .box{
+    padding:34px;
+    margin:4px;
+    border-radius: 24px;
+    background-color: azure;
+    box-shadow: 1.2px 4.3px 3px gray;
+}
+.h-primy{
+    text-align: center;
+}
+#services img{
+    /* img ko  center me lane k lye */
+    height:190px;
+    width:190px;
+    margin:auto;
+    display: block;
+}
+.center{
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* utility classes  */
+
+.h-primary{
+    font-size:2.8rem;
+    padding:12px;
+    
+}
+
+/* client section  */
+
+.client{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.client::before{
+    content: "";
+    position: absolute;
+    background-image: url("../background.jpeg") ;
+    opacity: 0.3;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:100%;
+    height:350px;
+   
+   
+}
+
+.client-container{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:300px;
+    margin:50px 0px;
+    text-shadow: 3px 3px 3px black;
+  
+}
+.client-container img{
+    margin:5px;
+    padding:5px 34px;
+    width:220px;
+}
+
+
+/**/
+
+/* contanct section    */
+
+.contact{
+    position:relative;
+}
+.contact::before{
+    content: "";
+    position:absolute;
+    min-width:100%;
+    min-height: 100%;
+    z-index:-1;
+    opacity: 1;
+    background-image: url("https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80") ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+} 
+form{
+    width:40%;
+}
+label{
+    font-size:1.3rem;
+    font-family: 'Bree Serif', serif;
+
+}
+#contact-box input , textarea{
+   width:100%;
+   padding:0.5rem;
+   border-radius: 8px;
+   border:none;
+   font-family: 'Bree Serif', serif;
+
+}
+textarea{
+    font-size:0.7rem;
+}
+
+
+/* footor */
+
+.center{
+    background-color:black;
+    color:white;
+    padding:10px 20px;
+}
+

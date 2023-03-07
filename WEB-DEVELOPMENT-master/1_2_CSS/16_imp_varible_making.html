@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom variable</title>
+    <style>
+        .container{
+            display:flex;
+            justify-content: center;
+        }
+        /*******                  making variable for any scope        **********/
+        :root{
+           --text-color:green;
+           --shadow-color:3px 3px 4px yellow;
+        }
+        .items{
+
+            /*************8               making variable (only valid for this scope)       *******/
+
+            --border-color:red; /*name can be any thing*/
+            --box-color:aqua;
+            --words-align:center;
+            height:200px;
+            width:200px;
+            background-color:var(--box-color);
+            margin:2px 3px;
+            border:2px solid var(--border-color);
+            text-align: var(--words-align);
+
+            box-shadow: var(--shadow-color);
+        }
+
+        h1{
+            color:var(--text-color);
+            text-shadow: var(--shadow-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items"><h1>HII</h1></div>
+        <div class="items"><h1>HOW</h1></div>
+        <div class="items"><h1>ARE</h1></div>
+        <div class="items"><h1>YOU</h1></div>
+    </div>
+</body>
+</html>

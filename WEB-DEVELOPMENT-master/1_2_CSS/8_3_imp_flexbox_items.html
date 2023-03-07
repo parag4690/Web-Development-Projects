@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box_items property</title>
+    <style>
+        .container{
+            width:100%;
+            height: 550px;
+            border:2px solid black;
+            display:flex;
+        }
+        .items{
+            height: 200px;
+            width:200px;
+            background-color: tomato;
+            border:2px solid green;
+            margin:10px;
+            padding:3px;
+        }
+
+        /******************************                     propery of items              ***********************/
+
+        #item-1{
+
+        /*********                        property-1                      ******************************/
+
+        order:2; /* ab first sbse last me chla jayga (agr hm item-2 ka oder jyda krdge ko vo last me chla jayga)*/
+
+          flex-grow:2; /* response krk k dekh (jb hm chotte se bda ayge to double speed se grow hoga)*/
+
+          /*   flex-shrink:2;   ( grow ka bilkul ulta h ye) */
+        }
+        #item-2{
+            flex-grow:3; 
+        }    
+        
+        #item-3{
+             flex-shrink: 2;
+
+             flex-basis: 120px; /***********  dyan                   important          ********/
+             /* when flex-direction is row then flex-basis will control width  */
+             /* when flex-dirction is coloumn then flex-basis will control height*/
+
+             /****************     combination   flex: grow shrink (flex basis) ;   *********  */
+
+             /*******               most  important   **********************/
+
+
+
+             align-self: flex-end;
+             /* align-self:flex-start ;
+                align-self:center;
+             */
+
+        }
+ 
+
+        
+    
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="item-1">First box</div> <!-- these are block by default they take 100% width-->
+        <div class="items" id="item-2">Second box</div>
+        <div class="items" id="item-3">Third box</div>
+    </div>
+</body>
+</html>

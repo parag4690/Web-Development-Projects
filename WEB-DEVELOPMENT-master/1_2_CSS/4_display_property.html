@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <link rel="icon" href="profile.png">
+    <style>
+        body{
+            margin-left:0px;
+            margin-top:0px;
+        }
+        .top {
+            
+            
+            padding-left: 20px;
+            background-color: aquamarine;
+        }
+        .pro{
+            text-decoration: underline;
+        }
+        .middle,.bottom{
+            height:200px;
+            width:200px;
+        }
+        .middle{
+            background-color: red;
+        }
+        .bottom{
+            background-color: blue;
+        }
+        /**/
+        /*in inline element we cant change width*/
+        /*change display property using display property*/
+        
+        p{
+            display:inline;
+            width:100px; /* we are not able to change width so use inline-block*/ 
+        }
+        h1{
+            display:inline;
+        }
+    </style>
+</head>
+<body>
+    <!--padding just helps the content it effects the actual value of the box, it will not -->
+    <div class="top">
+         <img src="cloud.png" alt="cloud_img"> <!--this is in next line but another cloud is not taking next line-->
+         
+         <h1>I'm Parag</h1> <!-- becouse of h1 and p because these are block elements which takes whole line--> <!-- p , div , h1-->
+         <br>
+         <p>a  <span class = "pro">pro</span>grammer</p>  <!-- i want underline under just pro using css--> <!-- span is inline element it will take only it needs-->
+          <br>
+         <p> checking </p> <p> p's property change </p><p> or not </p>
+         <br>
+         <img src="cloud.png" alt="cloud_img">
+         <img src="mountain.png" alt="mountain">
+    </div>
+    
+    <div class="middle"></div>
+    <div class="bottom"></div>
+    <!-- ****  inline- block property == esme ye inline ki trh kam krta h bs frk etna h ki esme hm height and width add krskte h --> 
+    
+</body>
+</html>

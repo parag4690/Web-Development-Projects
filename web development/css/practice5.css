@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+/* table border-spacing */
+caption{
+    letter-spacing: 6px;
+    background-color: rgba(235, 98, 35, 0.856);
+    color: white;
+    font-size: 26px;
+}
+.p{
+    background-color: rgb(255, 209, 217);
+}
+.g{
+    background-color: gray;
+    color: whitesmoke;
+}
+fieldset td:hover , .sec td:hover{
+  background-color: yellow;
+}
+
+fieldset{
+    display: inline-block;
+    border: 2px solid red;
+    padding: 10px;
+    position: relative;
+    left: 500px;
+    top:40px;
+}
+legend{
+    text-align: center;
+    font-size: 20px;
+    color: blue
+}
+.sec{
+   
+    border-spacing: 1px;
+    position: absolute;
+    top:318px;
+
+    text-align: center;
+    height: 300px;
+    left:320px;
+}
+.sec td{
+    background-color: rgb(177, 233, 67);
+
+}
+.a , .b {
+    padding: 100px 50px 0px 50px ;
+}
+.c , .d{
+    padding: 0px 50px 100px 50px;
+}

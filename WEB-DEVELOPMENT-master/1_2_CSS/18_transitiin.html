@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        .box{
+            display:flex;
+            height:200px;
+            width:200px;
+            background-color: green ;
+            justify-content: center;
+            align-items: center;
+
+            /* transition-property: (which property u wanna change)
+               transition-delay: hover krne pe kitne der bad start ho
+               transition-duration: kitni der tk
+               transition -timing - function : ease in:( starting me slow end me faset)
+            
+            */
+             /* all means jin jin property ka ho skta i will add in hover */
+            transition-property: all;
+            transition-duration: 1.2s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.3s;
+        }
+        .box:hover{
+            cursor: pointer;
+            height:400px;
+            width:400px;
+            background-color: blue;
+            border-radius: 40px;
+            font-size:35px;
+            font-family: Arial, Helvetica, sans-serif; /* eska nhi hua kyuki*/
+            font-weight: 800px;
+            color:aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am Parag Sharma
+    </div>
+</body>
+</html>

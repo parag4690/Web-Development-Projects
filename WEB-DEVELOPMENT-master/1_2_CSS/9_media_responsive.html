@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive</title>
+    <style>
+       .box{
+           text-align: center;
+           height:10em; /*parent k hisab se mean 10 guna of html size*/
+           font-size:28px;
+           display:none;
+       }
+       @media only screen and (max-width:300px){ /* 0 to 300 */
+          #box1{
+              display:block;
+              padding:10px;
+              background-color: aqua;
+              color:red;
+              height:30px;
+          }
+          p{
+              display: none;
+          }
+       }
+
+       @media (min-width:300px) and (max-width:500px){
+           #box2{
+              display:block;
+              padding:10px;
+              background-color: red;
+              color:green;
+              height:30px;
+           }
+           p{
+               display: none;
+           }
+       }
+
+       @media (min-width:500px) and (max-width:800px){
+           #box3{
+              display:block;
+              padding:10px;
+              background-color: green;
+              color:yellow;
+              height:30px;
+           }
+       }
+       @media (min-width:800px) {
+           #box4{
+              display:block;
+              padding:10px;
+              background-color: yellow;
+              color:blue;
+              height:30px;
+           }
+       }
+    </style>
+</head>
+<body>
+    
+        <div class="box" id="box1">This is phone</div>
+        <div class="box" id="box2">this is tab</div>
+        <div class="box" id="box3">this is desktop</div>
+        <div class="box" id="box4">this is wider computer</div>
+        <p> em -> parent k hisab se size set krti ( jse parent ki 2px thi to eski 4em ki (means 4 times hogi parent ki))</p>
+        <p>
+            rem -> html k size k hisab se hoga
+        </p>
+        <p>vh -> viewport height  -></p>
+    
+</body>
+</html>

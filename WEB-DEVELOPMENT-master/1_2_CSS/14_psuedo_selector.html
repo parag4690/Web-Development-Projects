@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color:white;
+        }
+        header::before{
+            content:"";
+            background-image: url("background.webp") ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+            width:100%;
+            position:absolute;
+            /*top left ko zero krde*/
+            top:0;
+            left:0;
+            /* z-index taki content uper a ske*/
+            z-index:-1;
+            opacity: 0.3;
+        }
+
+        .navigation {
+            display: flex;
+            color: white;
+        }
+
+        li {
+            list-style: none;
+            padding: 14px 23px;
+            color: aqua;
+        }
+
+        li:hover {
+            background-color: aqua;
+            color: black;
+        }
+        section{
+            height:400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           /* border:2px solid red; */
+            padding:2px 23px;
+            justify-content: center; /* vertically */
+            margin:70px;
+            margin-top:20px;
+
+        }
+        section >p {
+            font-size: small;
+            text-align: center;
+            padding:20px;
+        }
+
+        /*imp            i want to add before section  */
+
+        section::before{
+            
+            content: " <h1>This is content";
+                color:wheat;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item" id="#item1">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+
+        <section>
+            <h1>Welcome</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ratione quibusdam inventore ab
+                aliquam expedita perspiciatis eos corporis sint aliquid alias minima laborum similique, dolorum unde
+                nihil vel rerum assumenda odio! Laudantium beatae amet fugit molestias aliquid deserunt explicabo
+                incidunt nobis. Illum dignissimos aut iure recusandae repellat, omnis quaerat. Sint et veritatis
+                architecto deserunt recusandae tenetur optio, atque aliquid corrupti mollitia suscipit, aperiam
+                blanditiis voluptatum iste. Hic reprehenderit inventore rerum magnam nihil voluptatibus! Rerum cum in
+                voluptate autem, incidunt beatae. Odio facilis illo qui ratione. Odit illo architecto totam perferendis,
+                tempore maiores quam recusandae dicta reprehenderit repellat, ut aliquid temporibus aspernatur
+                 distinctio, id repellat explicabo magni, officia temporibus repellendus.</p>
+        </section>
+
+    </header>
+</body>
+
+</html>

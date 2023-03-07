@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact details</title>
+</head>
+<body>
+    <!-- form -->
+    <form action="index.html">
+        <label>your name </label>
+        <input type="text" name="helloo" value="paragsharma872" placeholder="parag"> <!--value se phle name likha ajayga-->
+        <input type="submit" name="hello">
+        <input type="color" name="colour">
+        <br>
+        <input type="email" placeholder="abc@gmail.com">
+        <br>
+        <label> do you have email </label>
+        <input type="checkbox" name="check">
+        <br>
+        <label>Password</label>
+        <input type="password" name="pass">
+        <br>
+        <fieldset>
+            <legend>Age</legend>
+            <label>above 18</label>
+            <input type="radio" name="18" required >
+            <br>
+            <label >16 - 18</label>
+            <input type="radio" name="18" checked>
+            <br>
+            <label> below 16 </label>
+            <input type="radio" name="18">
+        </fieldset>
+        <br>
+        <input type="file">
+        <br>
+        <input type="range">
+        <br>
+        <input type="date">
+        <br>
+        <button>parag</button>
+        <br> 
+        <select name="parag" id="parag">
+            <option value="">--please select an option</option>
+             <option value="parag">Parag</option>
+             <option value="sharma">sharma</option>
+        </select>
+
+        <br>
+        <label>choose</label>
+        <select name="sharma" id="sharma">
+            <optgroup label="first name">
+                <option value="parag">parag</option>
+                <option value="prince">prince</option>
+            </optgroup>
+            <optgroup label="last name">
+                <option value="shamra">sharma</option>
+                <option value="pandey">pandey</option>
+            </optgroup>
+        </select>
+        <br>
+        <label>file progress</label>
+        <progress id="file" max="100" value="90">90%</progress>
+        <br>
+        <textarea name="text" rows="5" cols="15"> hello i am parag sharma  </textarea> <!-- row = height cols= widht-->
+        <br>
+        <label for="ice-cream-choice">Choose a flavor:</label>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+<datalist id="ice-cream-flavors">
+    <option value="Chocolate">
+    <option value="Coconut">
+    <option value="Mint">
+    <option value="Strawberry">
+    <option value="Vanilla">
+</datalist>
+    </form>
+</body>
+</html>

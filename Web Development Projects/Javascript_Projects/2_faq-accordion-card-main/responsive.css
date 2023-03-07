@@ -1,0 +1,70 @@
+@media (max-width:922px){
+    .container{
+        width: 45rem;
+    }
+    .faq{
+        font-size: 1.7rem;
+    }
+    .queries{
+        width: 20rem;
+        font-size: 13px;
+    }
+    .image img{
+        height: 18rem;
+        width: 22rem;
+    }
+    #box{
+        z-index: 2;
+        height: 8rem;
+        width: 8rem;
+        position: relative;
+        left: -360px;
+        top: 42px;
+    }
+    .content{
+        width: 20rem;
+    }
+   
+}
+
+@media (max-width:790px){
+    .mobile{
+        display: inline-block;
+    }
+    .desktop{
+        display: none;
+    }
+    .container{
+        flex-direction: column;
+        width: 20rem;
+height: 35rem;
+align-items: center;
+overflow: visible;
+    }
+    .queries{
+        /* border:2px solid green; */
+        width: 18rem;
+        height: 20rem;
+        padding: 1rem 0;
+    }
+    .content{
+        width: 18rem;
+    }
+   
+    .faq{
+        align-self: center;
+        font-size: 2rem;
+    }
+    .image{
+        /* border:2px solid red; */
+        width: 20rem;
+        height: 7rem;
+        background-size: 16rem;
+    background-position: 2rem -9rem;
+    }
+    .image img{
+        height: 12rem;
+        bottom: 30rem;
+        left:-1rem;
+    }
+}

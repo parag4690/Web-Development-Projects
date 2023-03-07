@@ -1,0 +1,330 @@
+
+
+/* navbar section  */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  #navbar {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    line-height: 3;
+    padding-bottom: 1.2rem;
+  }
+
+  .logo {
+    font-size: 2.7rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    text-shadow: 2px 2px 2px red;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    align-items: center;
+  }
+
+  .items a {
+    text-decoration: none;
+    padding: 0px 20px;
+    color: gray;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: large;
+    /* under line effect */
+  }
+  
+  
+
+   .items a:hover{
+    color:wheat;
+    text-shadow: 2px 2px 2px black; 
+  } 
+
+/*    imp  under line effect     */
+  .ancher{
+  transition: 0.25s ease;
+  line-height: 1.1;
+  }
+  .ancher::after {
+    content: '';
+    border-top: 2px solid white;
+    width: 70%;
+    position: absolute;
+    display: block;
+    transform: rotateY(90deg); /*eske karn line over exide nhi hue*/
+    transition:transform 0.25s linear;
+  }
+  .ancher:hover {
+    transform: scale(1);
+  }
+  .ancher:hover::after {
+    transform: rotate(0deg);
+  }
+
+  /* title  */
+
+#title{
+    background-color: #f52040;
+    padding-left: 122px;
+padding-top: 0px;
+padding-right: 75px;
+padding-bottom: 40px;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    grid-gap:3rem;
+}
+.row h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size:3rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+.play , .app{
+  display: flex;
+align-items: center;
+padding: 6px;
+border: none;
+border-radius: 8px;
+}
+.img{    width: 35px;
+  padding: 3px;
+}
+.app{   color: black;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 24px;
+  background-color: whitesmoke;
+  position: relative;
+  left: 200px;
+  bottom: 60px;
+
+  /**/
+
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-delay: 0s;
+  transition-timing-function: ease-in;
+}
+.play{    color: white;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 20px;
+  background-color: black;
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-delay: 0s;
+  transition-timing-function: ease-in;
+}
+.button{
+  position:relative;
+  top:40px;
+}
+.play:hover{
+  cursor:pointer;
+  background-color: rgb(36, 34, 34);
+  /**/
+  transform: scale(1.1);
+}
+.app:hover{
+  cursor:pointer;
+  background-color: rgb(206, 173, 173);
+  /**/
+  transform: scale(1.1);
+}
+
+.dog{
+  transform: rotate(25deg);
+  height:550px;
+  position:absolute;  /* dyan video 83 image piche kse gyi*/
+}
+.play p , .app p{
+  position:relative;
+  top:7px;
+}
+
+/* features  */
+
+#features{
+  display: flex;
+  flex-wrap: wrap;
+  height:510px;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  position:relative;
+  z-index:1;
+}
+.box{
+  padding:20px;
+  background-color: rgb(255, 255, 220);
+  border-radius: 8px;
+  height:300px;
+  text-align: center;
+  box-shadow: 0px 2px 2px grey;
+  line-height: 2;
+}
+
+.box h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+}
+.box >p {
+  font-family: 'Ubuntu', sans-serif;
+  text-align:center;
+}
+.bull,.heart{
+  margin-top:14px;
+  margin-bottom: 17px;
+}
+
+/* testimotion  */
+#testimonials{
+  padding: 4% 15%;
+  text-align: center;
+  background-color: tomato;
+  color:white;
+}
+
+#testimonials h2{
+  font-family: "Montserrat-Black";
+  font-weight: bolder;
+  line-height: 1.5;
+  font-size:2.5rem;
+}
+
+.dogy{
+  width:10%;
+  border-radius: 100%;
+  margin:2%;
+
+}
+
+/* press  */
+#press{
+  background-color: tomato;
+  text-align: center;
+  padding:5%;
+  
+}
+
+.press-logo{
+  width:25%;
+  margin:20px 20px 50px; /* top (left,right) bottom */
+}
+
+/* pricing  */
+
+#pricing{
+  display: flex;
+  flex-direction: column;
+  padding:70px 30px;
+  font-family: 'Bree Serif', serif;
+  justify-content: center;
+}
+#pricing p{
+  font-family:ubuntu;
+  color:gray;
+}
+.boxes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  padding:20px;
+
+}
+.item-pricing{
+  width:25%;
+  border:2px solid #e9e5e5;
+  padding: 20px;
+  border-radius: 4px;
+}
+.boxes h3{
+  background-color: #e9e5e5;
+  padding:20px;
+  position:relative;
+  bottom: 20px;
+right: 22px;
+width: 116%;
+}
+.price-button,.sign-button{
+  width:100%;
+  padding:10px;
+  color:white;
+  background-color: black;
+  border-radius: 8px;
+  border:none;
+  border:1px solid black;
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.price-button:hover{
+  background-color: rgb(65, 63, 63);
+  transform: scale(1.1);
+}
+.big-pricing{
+  position: relative;
+  top:20px;
+}
+.sign-button{
+  color:black;
+  background-color: white;
+  
+}
+.sign-button:hover{
+  background-color: rgb(228, 224, 224);
+  transform:scale(1.1);
+}
+.title-pricing{
+  
+  padding-left:75px;
+}
+
+/* section cta  */
+
+#cta{
+  height:70vh;
+  width:100%;
+  background-color: #ff4c68;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer{
+  height:30vh;
+  width:100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#cta h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size:3rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+.footer-button{
+  right:110px;
+}
+footer img{
+  height:40px;
+  width:130px;
+}
+footer >p{
+  color:gray;
+  font-family: 'Ubuntu', sans-serif;
+
+}

@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-transform: capitalize;
+    height: 110px;
+    width: 100vw;
+    background-color: yellowgreen;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.side {
+    background-color: pink;
+    text-transform: capitalize;
+    width: 481px;
+    height: 459px;
+    position: relative;
+}
+
+.Main {
+    background-color: yellow;
+    text-transform: capitalize;
+    height: 310px;
+    width: 1045px;
+    position: absolute;
+    left: 481px;
+    top: 111px;
+}
+
+.extra {
+    background-color: gray;
+    position: absolute;
+    left: 481px;
+    top: 420px;
+    width: 1045px;
+    height: 149px;
+}
+
+footer {
+    background-color: black;
+    height: 114px;
+}
+span{
+    text-transform: uppercase;
+}
+.m , .p , .a{
+    font-weight: 300;
+    color: cyan;
+    font-size: 27px;
+}
+.y , .g , .e{
+    color:purple;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.p{
+    color: rgb(245, 108, 58);
+}
+.a{
+    font-weight: 400;
+    font-size: 40px;
+}
+.g{
+    font-weight: 400;
+    font-size: 60px;
+    color: rgb(28, 177, 28);
+
+}
+.e{
+    color: brown;
+    font-size: 33px;
+}
+.side p{
+    
+    color: rgb(22, 107, 107);
+    font-size: 40px;
+    position: absolute;
+    bottom: 10px;
+    /* left:30px; */
+    writing-mode: vertical-lr; 
+    letter-spacing: 14px;
+    /* text-orientation: upright; */
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        .box{
+            width:170px;
+            height:170px;
+            border:2px solid black;
+        }
+        #box-1{
+            background-color: green;
+        }
+        #box-2{
+            background-color: red;
+            /* display -> it will hide the box and also space */
+            /* display:none */
+            /* visibility : hidden ; it will the box but not the space
+            
+
+            ****************                            ********
+            
+            */
+
+            visibility:hidden;
+        }
+
+
+        /****************************            z-index           ***********************/
+
+        /*   it is only for position:absolute, relative , fixed and sticky not for static(default)  
+             meand first u need to make position relative,  
+             defaul or static me kuch nhi hoga
+
+             whichever z-index is high will come above over another
+        
+        */
+        
+        #box-3{
+            position:relative;
+            top:40px;
+            z-index:-1;
+            background-color: blue;
+        }
+        #box-4{
+            position:relative;
+            z-index:2;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+    <div class="box" id="box-4"></div>
+</body>
+</html>

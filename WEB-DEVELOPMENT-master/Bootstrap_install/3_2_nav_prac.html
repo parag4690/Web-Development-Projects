@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            text-transform: uppercase;
+        }
+        a{
+            text-decoration: none;
+            color:#fff;
+        }
+        .menu-bar{
+            position:relative;
+            background-color: blueviolet;
+            padding:5px;
+        }
+        .menu-bar ul{
+            list-style-type: none;
+            padding-left:0;
+        }
+        .menu-bar li{
+            width:100px;
+            display: inline-block;
+            text-align: center;
+            padding:10px;
+        }
+        .menu-bar li:hover{
+            background-color: aqua;
+            border-radius: 8px;
+        }
+        .sub-menu1{
+            display:none;
+        }
+        .menu-bar li:hover .sub-menu1{
+            display:block;
+            position:absolute;
+            background-color: red;
+            color:black;
+            padding:20px;
+            box-shadow: 2px 2px 5px #888888 ; /*right bottom  blur(optional) color */
+            z-index: 1;
+            margin-top:14px;
+            margin-left:-10px;
+        }
+
+        .menu-bar li:hover .sub-menu1 li{
+            display:block;
+        }
+        .place{
+            display: none;
+        }
+        .sub-menu1 .first:hover .place{
+            position:absolute; /*key factor*/
+            display: block;
+            background-color: black;
+            text-align: center;
+            color:white;
+            padding:20px;
+            margin-left:120px;
+        }
+
+
+        .sub-menu1 .middle:hover .place{
+            position:absolute; /*key factor*/
+            display: block;
+            background-color: black;
+            text-align: center;
+            color:white;
+            padding:20px;
+            margin-left:120px;
+        }
+
+
+
+        .sub-menu1 .last:hover .place{
+            position:absolute; /*key factor*/
+            display: block;
+            background-color: black;
+            text-align: center;
+            color:white;
+            padding:20px;
+            margin-left:120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-bar">
+        <ul>
+            <li><a href="#">Home</a>
+                 
+                <div class="sub-menu1">
+                    <ul>
+                        <li class="first"><a href="#">bhiwani</a>
+                            <div class="place">
+                                 <p>Haryana</p>
+                            </div>
+                        
+                        </li>
+                        <li class="middle"><a href="#">chitkara</a>
+                            <div class="place">
+                                <p>rajpura</p>
+                            </div>
+                        
+                        </li>
+                        <li class="last"><a href="#">jind</a>
+                            <div class="place">
+                                <p>haryana</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                  
+            
+            </li>
+               
+
+
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+            <li> <a href="#">registor</a></li>
+        </ul>
+    </div>
+</body>
+</html>

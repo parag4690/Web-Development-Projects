@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .container{
+            background-color: yellowgreen;
+        }
+        .item{
+            height:200px;
+            width:200px;
+            background-color: red;
+            /* hme position ko relative krna prega kyki hme esko move krana hai*/
+            position:relative;
+            animation-name:parag;
+            animation-duration: 0.3s; /*tin sec chlega*/
+            animation-iteration-count: 4;  /*count kitni bar chlega* infinite/
+           /* animation-fill-mode: forwards;  means animation khtm hone k bad jo eski last mode pe position thi vhi ruk jaygi*/
+            animation-delay: 2s;  /* mtlb site khulne k bad 2 second bad animation start ho*/
+            animation-direction: alternate; 
+            animation-timing-function: ease-in; /*mtlb phle slow chlega fir tj  , eska reverse out me h */
+        }
+        h1{
+            position: relative;
+        
+           animation-name:parag2;
+           animation-duration: 2s;
+           animation-iteration-count: infinite;
+           animation-delay: 2s;
+           color:white;
+        }
+        @keyframes parag{
+            from{
+               width:200px;
+            }
+            to{
+               width:800px;
+            }
+        }
+
+        @keyframes parag2{
+            from{
+                
+                color:white;
+            }
+            to{
+                color:green;
+            }
+        }
+
+        /***********                          2nd method of keyframs       ***********/
+        .check{
+            height:200px;
+            width:200px;
+            background-color:blue;
+            position:relative;
+           
+        }
+        .check{     /* hover me use krna h to .check:hover */
+            animation-name:check;
+            animation-duration: 2s ;
+            animation-iteration-count: 2;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes check{
+            0%{  /* mtlb jb animation 0% pura hue to ye hoga 25% hoga to ye hoga ____*/
+              left:0px;
+              top:0px;
+            }
+            25%{
+                left:200px;
+                top:0px;
+            }
+            50%{
+                 left:200px;
+                top:100px;
+            }
+            100%{
+               left:0px;
+                top:100px;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <h1>parag</h1>
+        </div>
+    </div>
+    <div class="check">
+
+    </div>
+</body>
+</html>

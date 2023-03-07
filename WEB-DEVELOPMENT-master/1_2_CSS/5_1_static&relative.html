@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static & relative</title>
+    <link rel="icon" href="cloud.png"  > <!-- padding me img k liye apna height width change ni krta -->
+    <!-- position property -->
+    <!-- 1 -> static = > default , go along with html rule
+         2 -> relative => previous  se kitna change hoga , top , bottom , left , right
+                eg jse phle x pe tha hmne change kiya 20px se to ye hoga x+20px;
+                this will activate when u use corner property
+    
+    -->
+    <!-- agr hm ye right vala static se krege to vo screen k right k hisab se hoga or disappear ni hoga-->
+    <!-- blki relative se right corner k hisab se move hoga-->
+
+    <style>
+        .red, .blue , .green{
+            height: 100px;
+            width:100px;
+            /*imp */
+            display:inline-block;
+        }
+        .red{
+          background-color: red;
+          position : relative; /* it will no affect another div or element jbki static pure ko affact kr deta tha*/
+          left: 211px;
+        }
+        .blue{
+            background-color:blue;
+            position:relative;
+            bottom:0px;
+            right:100px;
+        }
+        .green{
+            background-color: yellow;
+            position:relative;
+            bottom:0px;
+            right:100px;
+        }
+        .aqua{
+            background-color: aqua;
+            height: 100px;
+            width: 100px;
+            position : relative;
+            left:100px;
+           
+            /*eske bad right ni kr skta vo vapis ni ayga*/
+        }
+    </style>
+
+</head>
+<body>
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <h1>test</h1> 
+
+    <!-- why we use display: inline-block :
+        taki
+    -->
+
+    <img src="understand.png" height="450px">
+    <br>
+    <div class="aqua" ></div>
+</body>
+</html>

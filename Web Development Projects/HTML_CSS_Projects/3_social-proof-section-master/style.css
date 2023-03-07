@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&family=League+Spartan:wght@500;700&family=Montserrat:ital,wght@0,100;0,300;0,500;0,700;1,100;1,200;1,300;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+background-image:url(images/bg-pattern-top-desktop.svg) , url(images/bg-pattern-bottom-desktop.svg) ;
+    background-position: left top ;
+    background-repeat: no-repeat , no-repeat ;
+   
+}
+.main{
+    margin: 60px 150px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.item1{
+    box-sizing: border-box;
+     width: 600px;
+}
+.item2{
+    display: flex;
+    box-sizing: border-box;
+    width: 500px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 115px;
+}
+.heading{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    font-size: 72px;
+}
+.heading2{
+    font-size: 17px;
+    color: rgb(160 , 117 , 160);
+    font-weight: 400;
+}
+#star1 , #star2 , #star3{
+    display: inline-block;
+    width: 400px;
+    align-self: flex-top;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    background-color: rgb(245 , 234 , 255);
+    border-radius: 10px;
+    color:hsl(300, 43%, 22%);
+}
+#star2{
+    align-self: center;
+    
+}
+#star3{
+    align-self: flex-end;
+  
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    width: 80em;
+    justify-content: space-between;
+    height: 20em;
+}
+#box1 , #box2 , #box3{
+    box-shadow: 10px 10px 10px black;
+    border-radius: 10px;
+  height:285px;
+  width: 390px;
+  box-sizing: border-box; 
+  background-color: hsl(300, 43%, 22%);
+  color: white;
+  font-size:18px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  padding:30px;
+  align-content: center;
+}
+.naming img{
+    border-radius: 50%;
+    height:65px;
+}
+
+#box2{
+    align-self: center;
+}
+#box3{
+    align-self: flex-end;
+}
+ .content{
+    margin-top: 22px;
+}
+
+.naming{
+    display: flex;
+    flex-direction: row;   
+   
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 22px;
+}
+.first{
+    font-weight: bolder;
+}
+.last{
+    color:rgba(255 , 107 , 198 , 0.823);
+}
+.content{
+    font-weight: bolder;
+}

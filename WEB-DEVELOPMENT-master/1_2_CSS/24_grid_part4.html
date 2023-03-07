@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_part 3</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            display:grid;
+            /* responcive add hogyi  eske karn */
+            grid-template-columns: repeat(400px, minmax(400px,1fr));  /* screen ki width , () */  
+            
+            grid-gap:1rem;
+            
+            
+        }
+        .box{
+            background-color: red;
+            padding:20px;
+            border:none;
+            border-radius: 8px;
+            margin:5px;
+        }
+        
+    </style>
+</head>
+<body>
+     <div class="container">
+         <div class="box">items-1</div>
+         <div class="box">items-2</div>
+         <div class="box">items-3</div>
+         <div class="box">items-4</div>
+         <div class="box">items-5</div>
+         <div class="box">items-6</div>
+         <div class="box">items-7</div>
+         <div class="box">items-8</div>
+         <div class="box">items-9</div>
+         <div class="box">items-10</div>
+
+         <div class="box">items-11</div>
+         <div class="box">items-12</div>
+         <div class="box">items-13</div>
+         <div class="box">items-14</div>
+         <div class="box">items-15</div>         
+     </div>
+</body>
+</html>

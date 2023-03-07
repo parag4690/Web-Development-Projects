@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:500px;
+            width:100%;
+            background-color: aqua;
+        }
+        .box{
+            height: 200px;
+            width:200px;
+            background-color: green;
+            text-align:center;
+            /* ye hover me bhi lg skta or esme bhi dono me*/
+            /* use of transitin for ease effect */
+
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 0.3s;
+            animation-name: pulse;
+            animation-iteration-count: infinite;
+            animation-duration: 0.2s;
+
+        }
+
+        .box:hover{
+             transform: rotate(45deg); 
+            /* transform: skew(25deg); ye 3d me le ata hai  */
+            /* transform : scale(2) ; ye size ko do guna krdega  */
+            /* transform: translateX()  */
+            
+        }
+        @keyframes pulse{
+            to{
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- transform or transition ki help se hm hover me animation effect dal skte-->
+
+    <div class="container">
+        <div class="box">
+            this is box
+        </div>
+    </div>
+</body>
+</html>

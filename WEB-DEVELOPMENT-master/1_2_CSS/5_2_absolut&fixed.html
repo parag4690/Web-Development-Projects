@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute</title>
+    <style>
+        .red , .blue , .yellow{
+            height:100px;
+            width:100px;
+        }
+        .red{
+            background-color: red;
+            position:absolute;
+            left:200px;
+            top:200px;
+
+        }
+        .blue{
+            background-color:blue;
+            position:absolute;
+            left:100px;
+            top:100px; /* screen k rispect me hue h*/
+        }
+        .yellow{
+            background-color: yellow;
+            position:absolute;  /*or body { margin : 0 }*/
+            top:0px;
+            left:0px;
+        }
+        .container{
+           position : absolute; /*ye sceen k respect me hai*/
+           top:320px;
+            width:300px;
+            height: 300px;
+            background-color: black;
+        }
+        .white{
+            background-color: white;
+            position : absolute;
+            top:50px;
+            left:50px;
+            width:100px;
+            height:80px;
+            font-size: 10px;
+            text-align: center;
+            padding-top:20px;
+            
+        }
+        .green{
+            background-color: green;
+            position:fixed;
+            height:100px;
+            width:100px;
+            top:0px;
+            right:10px; /*similar like absoute but diffrence is that scrolllllllllllll*/
+
+        }
+        p{  
+            position: relative;
+            top:700px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- relative to the parent -> default is body -->
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="yellow"></div>
+    <!-- there is no necessary that there will always bebody parent-->
+    <br>
+    <div class="container">
+        <div class="white">
+            <span> My name is Parag Sharma</span>
+        </div>
+    </div>
+    <div class="green"></div>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero molestias enim ad sit omnis eum quos aspernatur, nostrum dicta delectus harum laudantium aliquam quam minima tempore illum hic nobis. Amet modi at tenetur obcaecati, quisquam placeat. Autem ea sapiente quam eligendi animi! Amet dignissimos sapiente beatae, illo quo molestias a similique optio officiis, itaque asperiores natus reprehenderit esse laborum voluptatem. Facere aut iste qui neque soluta, beatae quos sint nemo aliquid ea at repudiandae, consectetur excepturi corrupti. Fugit soluta incidunt dolor, veniam pariatur culpa dicta numquam. Asperiores doloremque aperiam, consequatur iste maiores vitae, blanditiis doloribus corporis quis praesentium, exercitationem perferendis quod distinctio et. Iste earum odio dolorem vitae odit iure fuga minus id magnam aspernatur ipsum animi asperiores aliquid natus nihil aliquam, maiores reiciendis perspiciatis dolore? Est tenetur quo laboriosam explicabo ex obcaecati tempore, deleniti veniam aliquam ullam, aliquid quibusdam suscipit iure necessitatibus voluptatum commodi sint deserunt nulla eligendi iusto eveniet fugit eos. Eos voluptatum eum ratione suscipit possimus repudiandae qui placeat totam magni aperiam enim iusto libero autem architecto sunt, reiciendis sint quod eveniet nobis repellat. Quaerat beatae sed odit consequuntur aliquam minus placeat voluptates consequatur facere temporibus id amet enim animi, alias neque eveniet vel dolores? Illum, tempora?</p>
+</body>
+</html>

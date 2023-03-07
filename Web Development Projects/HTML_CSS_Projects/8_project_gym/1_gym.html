@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parag's Fittness</title>
+    <link rel="icon" href="index2.png">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;700;800&family=Sacramento&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <style>
+        html {
+            margin: 0px;
+            height: 100%;
+        }
+
+        body {
+            margin: 0px;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: 'Baloo Bhai 2', cursive;
+            height: 100%;
+
+            background-image: url("background.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+
+        .left {
+            position: absolute;
+            /* ye chj hm flex box se krskte h or float se bhi*/
+            top: 20px;
+            left: 34px;
+            display: inline-block;
+        }
+
+        .mid {
+            /*center k liye*/
+            display: block;
+            margin: 12px auto;
+            width: 47%;
+            /*yha tk*/
+            font-weight: bold;
+        }
+
+        .right {
+            position: absolute;
+            /*header k hisab se*/
+            top: 20px;
+            right: 34px;
+            display: inline-block;
+            /* border:2px solid yellow; */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            /*imp*/
+            font-size: 18px;
+        }
+
+        .navbar li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        /*     dyan    active class property*/
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            /*  background-color: #888888; */
+
+            color: gray;
+            text-decoration: underline;
+        }
+
+        .left {
+            padding: 5px;
+        }
+
+        .fit {
+            text-align: center;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .email,
+        .call {
+            padding: 10px;
+            cursor: pointer;
+            color: white;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+        }
+
+        .call {
+
+            background-color: rgb(8, 8, 161);
+
+        }
+
+        .call:hover {
+            background-color: blue;
+        }
+
+        .email {
+            background-color: rgb(168, 10, 10);
+        }
+
+        .email:hover {
+            background-color: red;
+        }
+
+
+        .container {
+            border: 2px solid white;
+            margin: 2px 2px;
+            padding: 20px;
+            width: 33%;
+            border-radius: 8px;
+            margin-top: 130px;
+            margin-left: 130px;
+            text-align: center;
+        }
+
+
+        form {
+            display: block;
+            padding: 10px;
+        }
+
+        form {
+            margin-left: 75px;
+        }
+
+        form input {
+            display: block;
+            line-height: 1.6;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Baloo Bhai 2', cursive;
+            border-radius: 8px;
+            border: none;
+
+        }
+
+        .inside {
+            margin-bottom: 10px;
+
+        }
+
+        .container button {
+            width: 56%;
+            padding: 6px;
+            margin-left: -12px;
+            font-family: 'Baloo Bhai 2', cursive;
+            color: white;
+            background-color: rgba(0, 0, 0, 0);
+            border-radius: 8px;
+            border: 1px solid white;
+            font-size: medium;
+        }
+
+        .container button:hover {
+            background-color: #888888;
+            opacity: 0.1px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+
+<body>
+    <div class="background">
+        <header class="header">
+            <!--left box for logo-->
+            <div class="left">
+                <img src="logo.jpg" alt="eror" width="95px" align="center">
+                <div class="fit">Parag's Fittness</div>
+            </div>
+            <!--mid box for navbar-->
+            <div class="mid">
+                <ul class="navbar">
+                    <li><a href="#" class="active">home</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">Fittness calculater</a></li>
+                    <li><a href="#">contact us</a></li>
+                </ul>
+            </div>
+            <!--right box for buttons-->
+            <div class="right">
+                <button class="email">Email</button>
+                <button class="call">call us</button>
+            </div>
+        </header>
+
+        <div class="container">
+            <h1>Join bhiwani's best gym</h1>
+            <div class="form">
+
+                <form action="action.php" class="form">
+                    <div class="inside">
+                        <input type="text" name="textt" placeholder="Enter your name">
+                    </div>
+                    <div class="inside">
+                        <input type="age" name="ages" placeholder="Enter your name">
+
+                    </div>
+
+                    <div class="inside">
+                        <input type="email" name="emailid" placeholder="abc@gmail.com" required>
+                    </div>
+                    <div class="inside">
+                        <input type="password" name="pass" placeholder="password">
+                    </div>
+                </form>
+                <button> submit </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
